@@ -23,8 +23,8 @@ for robotic_arm robot</p>
 
   <depend>roslaunch</depend>
   <depend>robot_state_publisher</depend>
-  <depend>joint_state_publisher_gui</depend>
   <depend>rviz</depend>
+  <depend>joint_state_publisher</depend>
   <depend>joint_state_publisher_gui</depend>
   <depend>gazebo</depend>
   <depend>moveit_simple_controller_manager</depend>
