@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'link1_revolute', 'link2_revolute', 'link3_revolute', 'link4_revolute', 'link5_revolute', 'link6_1_prismatic', 'link6_2_prismatic', ]
