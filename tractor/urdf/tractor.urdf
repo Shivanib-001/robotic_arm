@@ -66,17 +66,17 @@
     name="FRONT_L">
     <inertial>
       <origin
-        xyz="-0.275503262308017 0.1134168249371 0.00114102748997771"
+        xyz="-0.2755 0.11342 0.001141"
         rpy="0 0 0" />
       <mass
         value="3290" />
       <inertia
-        ixx="1181.50205313415"
-        ixy="62.8690140923481"
-        ixz="-8.30908405189068"
-        iyy="4421.07152572309"
-        iyz="-0.511875110335584"
-        izz="3804.07165064492" />
+        ixx="1181.5"
+        ixy="62.869"
+        ixz="-8.3091"
+        iyy="4421.1"
+        iyz="-0.51188"
+        izz="3804.1" />
     </inertial>
     <visual>
       <origin
@@ -89,7 +89,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -114,22 +114,27 @@
       link="FRONT_L" />
     <axis
       xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="FRONT_R">
     <inertial>
       <origin
-        xyz="-0.275503262308017 0.1134168249371 0.00114102748997771"
+        xyz="-0.2755 0.11342 0.001141"
         rpy="0 0 0" />
       <mass
         value="3290" />
       <inertia
-        ixx="1181.50205313415"
-        ixy="62.8690140923481"
-        ixz="-8.30908405189068"
-        iyy="4421.07152572309"
-        iyz="-0.511875110335584"
-        izz="3804.07165064492" />
+        ixx="1181.5"
+        ixy="62.869"
+        ixz="-8.3091"
+        iyy="4421.1"
+        iyz="-0.51188"
+        izz="3804.1" />
     </inertial>
     <visual>
       <origin
@@ -142,7 +147,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -167,22 +172,27 @@
       link="FRONT_R" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="REAR_L">
     <inertial>
       <origin
-        xyz="-0.275503262308017 0.1134168249371 0.00114102748997771"
+        xyz="-0.2755 0.11342 0.001141"
         rpy="0 0 0" />
       <mass
         value="3290" />
       <inertia
-        ixx="1181.50205313415"
-        ixy="62.8690140923481"
-        ixz="-8.30908405189068"
-        iyy="4421.07152572309"
-        iyz="-0.511875110335584"
-        izz="3804.07165064492" />
+        ixx="1181.5"
+        ixy="62.869"
+        ixz="-8.3091"
+        iyy="4421.1"
+        iyz="-0.51188"
+        izz="3804.1" />
     </inertial>
     <visual>
       <origin
@@ -195,7 +205,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -220,22 +230,27 @@
       link="REAR_L" />
     <axis
       xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="REAR_R">
     <inertial>
       <origin
-        xyz="-0.275503262308017 0.1134168249371 0.00114102748997771"
+        xyz="-0.2755 0.11342 0.001141"
         rpy="0 0 0" />
       <mass
         value="3290" />
       <inertia
-        ixx="1181.50205313415"
-        ixy="62.8690140923481"
-        ixz="-8.30908405189068"
-        iyy="4421.07152572309"
-        iyz="-0.511875110335584"
-        izz="3804.07165064492" />
+        ixx="1181.5"
+        ixy="62.869"
+        ixz="-8.3091"
+        iyy="4421.1"
+        iyz="-0.51188"
+        izz="3804.1" />
     </inertial>
     <visual>
       <origin
@@ -248,7 +263,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="1 0.94902 0.9098 1" />
       </material>
     </visual>
     <collision>
@@ -273,12 +288,10 @@
       link="REAR_R" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
-
-  <gazebo>
-      <plugin name="control" filename="libgazebo_ros_control.so">
-              <robotNamespace>/</robotNamespace>
-      </plugin>
-  </gazebo>
-
 </robot>
