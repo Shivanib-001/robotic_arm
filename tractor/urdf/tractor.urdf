@@ -114,11 +114,6 @@
       link="FRONT_L" />
     <axis
       xyz="0 0 -1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="FRONT_R">
@@ -172,11 +167,6 @@
       link="FRONT_R" />
     <axis
       xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="REAR_L">
@@ -230,11 +220,6 @@
       link="REAR_L" />
     <axis
       xyz="0 0 -1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="REAR_R">
@@ -288,16 +273,12 @@
       link="REAR_R" />
     <axis
       xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
 
   <gazebo>
-      <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-              <robotNamespace>/robotic_arm</robotNamespace>
+      <plugin name="control" filename="libgazebo_ros_control.so">
+              <robotNamespace>/</robotNamespace>
       </plugin>
   </gazebo>
+
 </robot>
