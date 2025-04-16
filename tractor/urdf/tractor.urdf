@@ -294,4 +294,10 @@
       effort="0"
       velocity="0" />
   </joint>
+
+  <gazebo>
+      <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+              <robotNamespace>/robotic_arm</robotNamespace>
+      </plugin>
+  </gazebo>
 </robot>
