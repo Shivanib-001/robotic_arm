@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Tractor">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.171422023382714 0.0862248776292934 0.00157888042383488"
+        rpy="0 0 0" />
+      <mass
+        value="3290" />
+      <inertia
+        ixx="1159.38852318991"
+        ixy="0.431915046136476"
+        ixz="-4.85112591473185"
+        iyy="2316.72383623437"
+        iyz="-0.776131398586647"
+        izz="1715.72114839114" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.949019607843137 0.909803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Front_L">
+    <inertial>
+      <origin
+        xyz="0.17142 0.086225 0.0015789"
+        rpy="0 0 0" />
+      <mass
+        value="3290" />
+      <inertia
+        ixx="1159.4"
+        ixy="0.43192"
+        ixz="-4.8511"
+        iyy="2316.7"
+        iyz="-0.77613"
+        izz="1715.7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Front_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Front_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front1"
+    type="continuous">
+    <origin
+      xyz="0.70935 -0.51409 -0.13999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Front_L" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Front_R">
+    <inertial>
+      <origin
+        xyz="0.17142 0.086225 0.0015789"
+        rpy="0 0 0" />
+      <mass
+        value="3290" />
+      <inertia
+        ixx="1159.4"
+        ixy="0.43192"
+        ixz="-4.8511"
+        iyy="2316.7"
+        iyz="-0.77613"
+        izz="1715.7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Front_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Front_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front2"
+    type="continuous">
+    <origin
+      xyz="0.70935 0.51409 -0.13999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Front_R" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Rear_L">
+    <inertial>
+      <origin
+        xyz="0.17142 0.086225 0.0015789"
+        rpy="0 0 0" />
+      <mass
+        value="3290" />
+      <inertia
+        ixx="1159.4"
+        ixy="0.43192"
+        ixz="-4.8511"
+        iyy="2316.7"
+        iyz="-0.77613"
+        izz="1715.7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Rear_L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Rear_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rear1"
+    type="continuous">
+    <origin
+      xyz="-0.65 -0.77 0.055"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rear_L" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Rear_R">
+    <inertial>
+      <origin
+        xyz="0.17142 0.086225 0.0015789"
+        rpy="0 0 0" />
+      <mass
+        value="3290" />
+      <inertia
+        ixx="1159.4"
+        ixy="0.43192"
+        ixz="-4.8511"
+        iyy="2316.7"
+        iyz="-0.77613"
+        izz="1715.7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Rear_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Tractor/meshes/Rear_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rear2"
+    type="continuous">
+    <origin
+      xyz="-0.65 0.77 0.055"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rear_R" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <updateRate>100.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <leftFrontJoint>Front1</leftFrontJoint>
+      <rightFrontJoint>Front2</rightFrontJoint>
+      <leftRearJoint>Rear1</leftRearJoint>
+      <rightRearJoint>Rear2</rightRearJoint>
+      <wheelSeparation>0.4</wheelSeparation>
+      <wheelDiameter>0.215</wheelDiameter>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <torque>20</torque>
+      <topicName>cmd_vel</topicName>
+      <broadcastTF>false</broadcastTF>
+    </plugin>
+  </gazebo>
+</robot>
