@@ -314,4 +314,28 @@
       effort="30"
       velocity="1" />
   </joint>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  
+  <gazebo reference="Front_L">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  
+  <gazebo reference="Front_R">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="Rear_R">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  
+  <gazebo reference="Rear_L">
+    <material>Gazebo/Black</material>
+  </gazebo>
+     
+  <gazebo reference="IMPLEMENT">
+    <material>Gazebo/Gray</material>
+  </gazebo>
 </robot>
