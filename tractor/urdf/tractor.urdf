@@ -256,64 +256,6 @@
     <axis
       xyz="0 1 0" />
   </joint>
-  <link
-    name="IMPLEMENT">
-    <inertial>
-      <origin
-        xyz="0.17142 0.086225 0.0015789"
-        rpy="0 0 0" />
-      <mass
-        value="220" />
-      <inertia
-        ixx="1225"
-        ixy="166.96"
-        ixz="-1.1891"
-        iyy="5357.7"
-        iyz="-1.5076"
-        izz="4831" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://tractor/meshes/IMPLEMENT.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://tractor/meshes/IMPLEMENT.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="implement"
-    type="revolute">
-    <origin
-      xyz="-0.985 0.0072479 0.245"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="IMPLEMENT" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="-1"
-      upper="1"
-      effort="30"
-      velocity="1" />
-  </joint>
 
   <gazebo reference="base_link">
     <material>Gazebo/Blue</material>
@@ -335,7 +277,4 @@
     <material>Gazebo/Black</material>
   </gazebo>
      
-  <gazebo reference="IMPLEMENT">
-    <material>Gazebo/Gray</material>
-  </gazebo>
 </robot>
